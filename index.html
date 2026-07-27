@@ -251,6 +251,77 @@
     grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
     gap:18px;
   }
+  /* ===============================
+PROJECTS SECTION
+=============================== */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+.project-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(16px);
+    border-radius:18px;
+    padding:28px;
+
+    border:1px solid rgba(255,255,255,.40);
+
+    box-shadow:
+      0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+      0 25px 50px rgba(0,0,0,.15);
+}
+
+.project-icon{
+    font-size:32px;
+    margin-bottom:14px;
+}
+
+.project-card h3{
+    font-size:20px;
+    margin-bottom:12px;
+    color:var(--primary-dark);
+}
+
+.project-card p{
+    color:var(--text-dim);
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+.project-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.project-tags span{
+    background:var(--primary-tint);
+    color:var(--primary-dark);
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+}
+
   .skill-card h3{
     font-family:'Sora', sans-serif;
     font-size:15px;
@@ -977,39 +1048,86 @@ Srujan B G
       Featured Projects
     </h2>
 
-    <div class="skills-grid reveal">
+    <div class="project-grid reveal">
 
-      <div class="skill-card">
+      <div class="project-card">
+
+        <div class="project-icon">🔐</div>
+
         <h3>User Administration OData Service</h3>
+
         <p>
-          Built a centralized OData service for SAP user
-          administration including lock, unlock and
-          password reset functionalities.
+          Developed a centralized SAP user administration
+          service supporting user lock, unlock and password
+          reset functionalities using SAP standard BAPIs.
         </p>
+
+        <div class="project-tags">
+          <span>ABAP</span>
+          <span>OData</span>
+          <span>BAPI</span>
+        </div>
+
       </div>
 
-      <div class="skill-card">
+      <div class="project-card">
+
+        <div class="project-icon">📊</div>
+
         <h3>Transport Request Insight Tool</h3>
+
         <p>
-          Created an OData service to provide transport
-          task visibility and monitoring.
+          Created a transport request monitoring service
+          providing visibility of transport tasks, objects
+          and descriptions across development systems.
         </p>
+
+        <div class="project-tags">
+          <span>ABAP</span>
+          <span>Gateway</span>
+          <span>OData</span>
+        </div>
+
       </div>
 
-      <div class="skill-card">
+      <div class="project-card">
+
+        <div class="project-icon">⚡</div>
+
         <h3>Excel Upload Automation</h3>
+
         <p>
           Automated SAP configuration uploads from
-          multi-sheet Excel files reducing manual effort.
+          multi-sheet Excel workbooks, reducing manual
+          effort and improving data accuracy.
         </p>
+
+        <div class="project-tags">
+          <span>ABAP</span>
+          <span>ALV</span>
+          <span>Excel</span>
+        </div>
+
       </div>
 
-      <div class="skill-card">
+      <div class="project-card">
+
+        <div class="project-icon">🚀</div>
+
         <h3>RAP Proof of Concept</h3>
+
         <p>
-          Developed RAP-based business objects with CDS
-          view entities, behavior definitions and OData exposure.
+          Built RAP business objects using CDS View
+          Entities, Behavior Definitions and OData
+          exposure within SAP BTP.
         </p>
+
+        <div class="project-tags">
+          <span>RAP</span>
+          <span>CDS</span>
+          <span>BTP</span>
+        </div>
+
       </div>
 
     </div>
