@@ -339,7 +339,35 @@ PROJECTS SECTION
     padding:5px 11px;
     border-radius:6px;
   }
+.skill-cloud{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
 
+.skill-pill{
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    background:
+      rgba(255,255,255,.75);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+.skill-pill:hover{
+    background:var(--primary);
+    color:white;
+
+    transform:translateY(-3px);
+}
   /* ---------- experience timeline ---------- */
   .timeline{
     position:relative;
@@ -989,23 +1017,30 @@ Srujan B G
     <div class="wrap">
       <div class="eyebrow reveal"><span class="mono-label">01 · Capabilities</span></div>
       <h2 class="sec-title reveal">Technical Skills</h2>
-      <div class="skills-grid reveal">
-        <div class="skill-card">
-          <h3>SAP Technologies</h3>
-          <div class="tag-list">
-            <span class="tag">ABAP Reports</span>
-            <span class="tag">Object-Oriented ABAP</span>
-            <span class="tag">Function Modules</span>
-            <span class="tag">BAPIs</span>
-            <span class="tag">Smart Forms</span>
-            <span class="tag">Adobe Forms</span>
-            <span class="tag">Enhancements (User Exits, BAdIs)</span>
-            <span class="tag">OData Services (Gateway)</span>
-            <span class="tag">CDS Views</span>
-            <span class="tag">ABAP RAP</span>
-            <span class="tag">SAP BTP ABAP Environment</span>
-          </div>
-        </div>
+      <div class="skill-cloud reveal">
+
+    <span class="skill-pill">ABAP Reports</span>
+    <span class="skill-pill">Object-Oriented ABAP</span>
+    <span class="skill-pill">Function Modules</span>
+    <span class="skill-pill">BAPIs</span>
+    <span class="skill-pill">Smart Forms</span>
+    <span class="skill-pill">Adobe Forms</span>
+    <span class="skill-pill">Enhancements</span>
+    <span class="skill-pill">OData Services</span>
+    <span class="skill-pill">CDS Views</span>
+    <span class="skill-pill">ABAP RAP</span>
+    <span class="skill-pill">SAP BTP</span>
+    <span class="skill-pill">SAP Gateway</span>
+    <span class="skill-pill">SAP Cloud Connector</span>
+    <span class="skill-pill">SAP GUI</span>
+    <span class="skill-pill">Eclipse ADT</span>
+    <span class="skill-pill">Business Application Studio</span>
+    <span class="skill-pill">Git</span>
+    <span class="skill-pill">Postman</span>
+    <span class="skill-pill">SQL</span>
+    <span class="skill-pill">Open SQL</span>
+
+</div>
         <div class="skill-card">
           <h3>Integration &amp; APIs</h3>
           <div class="tag-list">
